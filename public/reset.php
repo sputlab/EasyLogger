@@ -13,7 +13,11 @@ header('X-Frame-Options: DENY');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>EasyLogger — Reset password</title>
+  <link rel="icon" type="image/svg+xml" href="icons/easylogger-icon.svg">
   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180x180.png">
   <script>
     (function () {
       try {
@@ -29,7 +33,10 @@ header('X-Frame-Options: DENY');
 <body>
   <div class="auth-wrap" style="min-height:100vh">
     <div class="auth-box">
-      <div class="about-logo" style="margin-top:0">Easy<span>Logger</span></div>
+      <div class="auth-brand">
+        <img src="icons/easylogger-icon.svg" class="auth-icon" alt="EasyLogger" width="56" height="56">
+        <div class="about-logo">Easy<span>Logger</span></div>
+      </div>
       <h2 data-i18n="reset.page.title">Reimposta la password</h2>
       <div class="auth-form mt16" id="resetForm">
         <div class="field">

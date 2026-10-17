@@ -1,15 +1,27 @@
-# EasyLogger
+<p align="center">
+  <a href="https://github.com/sputlab/EasyLogger">
+    <img src="resources/icons/easylogger-icon.svg" width="128" height="128" alt="EasyLogger Logo">
+  </a>
+</p>
 
-[![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](CHANGELOG.md)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
-[![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4.svg)](https://www.php.net/)
-[![Database](https://img.shields.io/badge/Database-MySQL%20%7C%20MariaDB-orange.svg)](https://mariadb.org/)
-[![PWA](https://img.shields.io/badge/PWA-offline--first-green.svg)](public/manifest.json)
+<h1 align="center">EasyLogger</h1>
 
-> **EasyLogger** is a lightweight, local-first multi-timer time tracking web application and Progressive Web App (PWA).  
-> Built with HTML5, vanilla JavaScript, PHP 8+, and MySQL/MariaDB. Created by [sputlab.com](https://www.sputlab.com).
+<p align="center">
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-4.0.0-blue.svg" alt="Version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.0%2B-777bb4.svg" alt="PHP"></a>
+  <a href="https://mariadb.org/"><img src="https://img.shields.io/badge/Database-MySQL%20%7C%20MariaDB-orange.svg" alt="Database"></a>
+  <a href="public/manifest.json"><img src="https://img.shields.io/badge/PWA-offline--first-green.svg" alt="PWA"></a>
+</p>
 
-[🇮🇹 **Leggi la documentazione in italiano**](README.it.md)
+<p align="center">
+  <strong>EasyLogger</strong> is a lightweight, local-first multi-timer time tracking web application and Progressive Web App (PWA).<br>
+  Built with HTML5, vanilla JavaScript, PHP 8+, and MySQL/MariaDB. Created by <a href="https://www.sputlab.com">sputlab.com</a>.
+</p>
+
+<p align="center">
+  <a href="README.it.md">🇮🇹 <strong>Leggi la documentazione in italiano</strong></a>
+</p>
 
 ---
 

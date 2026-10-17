@@ -37,9 +37,13 @@ textarea{font-family:var(--sans);}
   padding:0 20px;height:56px;
   background:var(--surface);border-bottom:1px solid var(--border);
   box-shadow:var(--shadow);transition:background var(--t),border-color var(--t);
+.topbar-logo{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:22px;font-weight:800;letter-spacing:-.5px;
+  cursor:pointer;padding:0;background:none;border:none;color:inherit;font-family:inherit;
 }
-.topbar-logo{font-size:22px;font-weight:800;letter-spacing:-.5px;cursor:pointer;padding:0;}
-.topbar-logo span{color:var(--accent);}
+.topbar-logo span span{color:var(--accent);}
+.topbar-logo .topbar-icon{width:28px;height:28px;border-radius:6px;display:block;flex-shrink:0;}
 .topbar-right{display:flex;align-items:center;gap:10px;}
 .user-pill{
   font-family:var(--mono);font-size:11px;font-weight:700;
@@ -74,9 +78,13 @@ textarea{font-family:var(--sans);}
 .drawer.open{transform:translateX(0);}
 .drawer-head{
   display:flex;align-items:center;justify-content:space-between;
-  padding:18px 20px;border-bottom:1px solid var(--border);
+  padding:16px 20px;border-bottom:1px solid var(--border);
 }
-.drawer-head .ttl{font-size:13px;font-weight:700;font-family:var(--mono);color:var(--text-muted);}
+.drawer-brand{display:inline-flex;align-items:center;gap:8px;}
+.drawer-brand .drawer-icon{width:24px;height:24px;border-radius:5px;display:block;flex-shrink:0;}
+.drawer-brand .ttl{font-size:16px;font-weight:800;letter-spacing:-.3px;color:var(--text);}
+.drawer-brand .ttl span{color:var(--accent);}
+.drawer-foot-icon{width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:4px;}
 .drawer-close{
   width:28px;height:28px;border-radius:6px;border:1px solid var(--border);
   background:transparent;cursor:pointer;font-size:16px;color:var(--text-muted);
@@ -452,7 +460,12 @@ font-style: italic;
 }
 .label-add-btn:hover{border-color:var(--green);color:var(--green);}
 
-/* ═══════════════════════════ ABOUT PAGE ═════════════════════════════ */
+.auth-brand{text-align:center;margin-bottom:18px;}
+.auth-brand .auth-icon{width:56px;height:56px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.15);display:inline-block;}
+.auth-brand .about-logo{font-size:22px;margin:8px 0 0;}
+.about-brand{text-align:center;margin-bottom:12px;}
+.about-brand .about-icon{width:64px;height:64px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.15);display:inline-block;}
+.about-brand .about-logo{margin-top:8px;}
 .about-logo{font-size:25px;font-weight:800;text-align:center;margin:8px 0 4px;}
 .about-logo span{color:var(--accent);}
 .about-ver{text-align:center;font-family:var(--mono);font-size:11px;color:var(--text-muted);margin-bottom:20px;}
@@ -543,6 +556,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-vis
 @media (max-width:440px){
   .topbar{padding:0 12px;}
   .topbar-logo{font-size:19px;}
+  .topbar-logo .topbar-icon{width:24px;height:24px;}
   .topbar-right{gap:6px;}
   .user-pill{max-width:96px;overflow:hidden;text-overflow:ellipsis;padding:4px 9px;}
   .sync-badge{padding:3px 7px;}

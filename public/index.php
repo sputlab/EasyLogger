@@ -28,6 +28,7 @@ header('X-Frame-Options: DENY');
   </script>
 
   <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icons/easylogger-icon.svg">
   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -57,7 +58,10 @@ header('X-Frame-Options: DENY');
 
 <!-- ═══════════════════ TOPBAR ═══════════════════ -->
 <header class="topbar">
-  <button type="button" class="topbar-logo" onclick="nav('home')" style="background:none;border:none;color:inherit;font-family:inherit">Easy<span>Logger</span></button>
+  <button type="button" class="topbar-logo" onclick="nav('home')">
+    <img src="icons/easylogger-icon.svg" class="topbar-icon" alt="" width="28" height="28">
+    <span>Easy<span>Logger</span></span>
+  </button>
   <div class="topbar-right">
     <span class="sync-badge" id="syncBadge" style="display:none" role="status" aria-live="polite"></span>
     <button type="button" class="user-pill" id="userPill" onclick="nav('account')" style="display:none"></button>
@@ -71,7 +75,10 @@ header('X-Frame-Options: DENY');
 <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
 <nav class="drawer" id="drawer">
   <div class="drawer-head">
-    <span class="ttl" data-i18n="menu.title">Menu</span>
+    <div class="drawer-brand">
+      <img src="icons/easylogger-icon.svg" class="drawer-icon" alt="" width="24" height="24">
+      <span class="ttl">Easy<span>Logger</span></span>
+    </div>
     <button type="button" class="drawer-close" onclick="closeDrawer()" data-i18n-aria="menu.close">×</button>
   </div>
   <div class="drawer-body">
@@ -100,7 +107,7 @@ header('X-Frame-Options: DENY');
     </button>
   </div>
   <div class="drawer-foot">
-    <div class="drawer-version" data-version="short">EasyLogger v<?= $v ?> by sputlab.com</div>
+    <div class="drawer-version" data-version="short"><img src="icons/easylogger-icon.svg" class="drawer-foot-icon" alt="" width="14" height="14"> EasyLogger v<?= $v ?> by sputlab.com</div>
   </div>
 </nav>
 
@@ -109,6 +116,10 @@ header('X-Frame-Options: DENY');
 <section class="page" id="page-auth">
   <div class="auth-wrap">
     <div class="auth-box">
+      <div class="auth-brand">
+        <img src="icons/easylogger-icon.svg" class="auth-icon" alt="EasyLogger" width="56" height="56">
+        <div class="about-logo">Easy<span>Logger</span></div>
+      </div>
       <h2 id="authTitle">Accedi</h2>
       <p class="sub" id="authSub">Bentornato su EasyLogger</p>
       <div class="auth-form">
@@ -239,7 +250,10 @@ header('X-Frame-Options: DENY');
   <div class="page-inner">
     <button type="button" class="btn btn-ghost btn-back" onclick="nav('home')" style="align-self:flex-start;" data-i18n="account.back">← Indietro</button>
     <div class="card">
-      <div class="about-logo">Easy<span>Logger</span></div>
+      <div class="about-brand">
+        <img src="icons/easylogger-icon.svg" class="about-icon" alt="EasyLogger" width="64" height="64">
+        <div class="about-logo">Easy<span>Logger</span></div>
+      </div>
       <div class="about-ver" data-version="about">versione <?= $v ?> · by sputlab.com</div>
       <p class="about-p" data-i18n="about.p1"></p>
       <p class="about-p" data-i18n="about.p2"></p>
@@ -264,6 +278,10 @@ header('X-Frame-Options: DENY');
 <section class="page" id="page-reset">
   <div class="auth-wrap">
     <div class="auth-box">
+      <div class="auth-brand">
+        <img src="icons/easylogger-icon.svg" class="auth-icon" alt="EasyLogger" width="56" height="56">
+        <div class="about-logo">Easy<span>Logger</span></div>
+      </div>
       <h2 data-i18n="reset.title">Recupera password</h2>
       <p class="sub" data-i18n="reset.sub">Inserisci il tuo username</p>
       <div class="field">

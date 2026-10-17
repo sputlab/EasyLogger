@@ -1,16 +1,28 @@
-# EasyLogger
+<p align="center">
+  <a href="https://github.com/sputlab/EasyLogger">
+    <img src="resources/icons/easylogger-icon.svg" width="128" height="128" alt="Logo EasyLogger">
+  </a>
+</p>
 
-[![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](CHANGELOG.md)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
-[![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4.svg)](https://www.php.net/)
-[![Database](https://img.shields.io/badge/Database-MySQL%20%7C%20MariaDB-orange.svg)](https://mariadb.org/)
-[![PWA](https://img.shields.io/badge/PWA-offline--first-green.svg)](public/manifest.json)
+<h1 align="center">EasyLogger</h1>
 
-> Time tracker web multi-timer minimalista e Progressive Web App (PWA) local-first.  
-> Sviluppato con HTML5, JS vanilla, PHP 8+ e MySQL/MariaDB. Creato da [sputlab.com](https://www.sputlab.com).  
-> Interfaccia bilingue in **italiano** e **inglese**.
+<p align="center">
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-4.0.0-blue.svg" alt="Version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.0%2B-777bb4.svg" alt="PHP"></a>
+  <a href="https://mariadb.org/"><img src="https://img.shields.io/badge/Database-MySQL%20%7C%20MariaDB-orange.svg" alt="Database"></a>
+  <a href="public/manifest.json"><img src="https://img.shields.io/badge/PWA-offline--first-green.svg" alt="PWA"></a>
+</p>
 
-[🇬🇧 **Read documentation in English**](README.md)
+<p align="center">
+  Time tracker web multi-timer minimalista e Progressive Web App (PWA) local-first.<br>
+  Sviluppato con HTML5, JS vanilla, PHP 8+ e MySQL/MariaDB. Creato da <a href="https://www.sputlab.com">sputlab.com</a>.<br>
+  Interfaccia bilingue in <strong>italiano</strong> e <strong>inglese</strong>.
+</p>
+
+<p align="center">
+  <a href="README.md">🇬🇧 <strong>Read documentation in English</strong></a>
+</p>
 
 ---
 

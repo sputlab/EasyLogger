@@ -25,6 +25,8 @@ const SHELL = [
   'favicon/favicon.ico',
   'favicon/favicon-16x16.png',
   'favicon/favicon-32x32.png',
+  'icons/easylogger-icon.svg',
+  'icons/easylogger-icon.png',
   'icons/icon-192x192.png',
   'icons/icon-512x512.png',
 ];
