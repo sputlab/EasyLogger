@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  php-lint:
+    name: Lint PHP ${{ matrix.php-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-version: ['8.0', '8.1', '8.2', '8.3']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: pdo_mysql, json, session
+
+      - name: Syntax check (php -l)
+        run: |
+          find public -name "*.php" -print0 | xargs -0 -n 1 php -l
+
+      - name: Validate JSON syntax
+        run: |
+          python3 -m json.tool public/manifest.json > /dev/null
+
+      - name: Security check - ensure config.local.php is not committed
+        run: |
+          if [ -f public/config/config.local.php ]; then
+            echo "Error: config.local.php must not be committed to git!"
+            exit 1
+          fi

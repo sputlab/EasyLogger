@@ -1,0 +1,47 @@
+# ==========================================================
+#  EasyLogger — .gitignore
+# ==========================================================
+
+# Sensitive local configuration (contains database credentials)
+public/config/config.local.php
+config/config.local.php
+config.local.php
+.env
+.env.*
+
+# Logs
+public/logs/*.log
+public/logs/*.log.*
+logs/*.log
+!public/logs/.gitkeep
+
+# Legacy versions, experiments, and archives
+old/
+_archive/
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Editor & IDE directories
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Dependencies (if added in the future)
+vendor/
+node_modules/

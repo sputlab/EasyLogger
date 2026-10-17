@@ -1,0 +1,38 @@
+services:
+  app:
+    build: .
+    container_name: easylogger-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+    environment:
+      DB_HOST: db
+      DB_NAME: easylogger
+      DB_USER: easylogger
+      DB_PASS: easylogger_secret
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.11
+    container_name: easylogger-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: easylogger
+      MYSQL_USER: easylogger
+      MYSQL_PASSWORD: easylogger_secret
+    volumes:
+      - ./sql/install.sql:/docker-entrypoint-initdb.d/01-install.sql:ro
+      - easylogger_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  easylogger_data:
